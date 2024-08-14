@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Login & Registration Form | helpme_coder</title>
+  <link rel="stylesheet" type="text/css" href="C:\\Users\\SM.HARIHARASUTHAN\\3D Objects\\ecommerce\\Animated sign-in and sign-up page\\signin.css">
+</head>
+<body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ 
+
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="">
+        <h2>Sign-in</h2>
+        <div class="input-group">
+          <input type="text" required id="text">
+          <label for="">Username</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required id="password">
+          <label for="">Password</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox" id="checkbox"> Remember me</label>
+        </div>
+        <button type="submit"  onclick="SignIn()">Login</button>
+        <div class="signUp-link">
+          <p>Don't have an account? <a href="#" class="signUpBtn-link"onclick="showSignUpForm()">Sign Up</a></p>
+          <a href="C:\Users\SM.HARIHARASUTHAN\3D Objects\ecommerce\Home.html" >   <ion-icon name="arrow-back-outline" class="icon"style="background-color:white;padding:10px;border:1px solid black;border-radius:50%;margin-top:5px;font-size:25px;color:black;"></ion-icon></a>
+        </div>
+      </form>
+    </div>
+    <div class="form-wrapper sign-up"style="opacity:0;">
+      <form action="">
+        <h2>Sign Up</h2>
+        <div class="input-group">
+          <input type="text" required id="txt">
+          <label for="">Username</label>
+        </div>
+        <div class="input-group">
+          <input type="email" required id="mail">
+          <label for="">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required id="pass">
+          <label for="">Password</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox" id="box"> I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" onclick="SignUp()">Sign Up</button>
+        <div class="signUp-link">
+          <p>Already have an account? <a href="#" class="signInBtn-link"onclick="showSignInForm()">Sign In</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="C:\\Users\\SM.HARIHARASUTHAN\\3D Objects\\ecommerce\\Animated sign-in and sign-up page\\signin.js"></script>
+  <!-- code by helpme_coder -->
+</body>
+</html>

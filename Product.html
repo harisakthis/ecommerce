@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>species</title>
+      <meta charset="utf-8">
+      <meta name="viewport",content="width=device-width , initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
+      <link rel="stylesheet" href="https://fontawesome.com/icons/cart-shopping?f=classic&s=solid" >
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+
+
+      <link href="style.css" rel="stylesheet">
+
+    
+      
+
+
+  </head>
+<body>
+
+  <!--navabar-->
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark "id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Spice Emporium</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item ">
+              <a class="nav-link"  href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+           
+          </ul>
+          <div class="cart mx-2" >
+            <div class="cart-count">0</div>
+            <ion-icon name="cart" id="carticon"></ion-icon>
+          </div>
+        
+         <button type="button p-2 my-lg-0 my-2"class="but" >Sign In.</button>
+
+         <!--cart page-->
+         <div class="cartt ">
+          <div class="cartt-title">Cart Items</div>
+          <div class="cartt-content">
+<!--
+            <div class="cartt-box">
+              <img src="wetleaf.png" class="cartt-img">
+              <div class="detail-box">
+                <div class="cartt-food-title">Wetleaf masala</div>
+                <div class="price-box">
+                  <div class="cartt-price">Rs.20</div>
+                  <div class="cartt-amt">Rs.20</div>
+                
+                </div>
+                <input type="number" value="1" class="cartt-quantity">
+
+              </div>
+              <ion-icon name="trash" class="cartt-remove"></ion-icon>
+            </div>
+            
+            <div class="cartt-box">
+              <img src="wetleaf.png" class="cartt-img">
+              <div class="detail-box">
+                <div class="cartt-food-title">Wetleaf masala</div>
+                <div class="price-box">
+                  <div class="cartt-price">Rs.20</div>
+                  <div class="cartt-amt">Rs.20</div>
+                
+                </div>
+                <input type="number" value="1" class="cartt-quantity">
+
+              </div>
+              <ion-icon name="trash" class="cartt-remove"></ion-icon>
+            </div>
+          -->
+
+          </div>
+
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs.0</div>
+          </div>
+
+          <button class="btn-buy"onclick="checkout()">Place Order</button>
+          <ion-icon name="close" class="cartt-close"></ion-icon>
+
+         </div>
+       
+      </div>
+    </nav>
+<!--separate nav text-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+<!--product-->
+<section id="Product">
+  <div class="card" style="width:100%;">
+  <img src="img4.webp" class=" card-img img-fluid"style="width:100%;height:300px;opacity:.9;">
+  <div class="card-img-overlay">
+    <h1 class="card-title">OUR PRODUCT</h1>
+  </div>
+</div>
+</section>
+<div class="container">
+   <h1 class="masp"style="font-weight:600;">MASALA & SPICES</h1>
+  <!-- <h1 class="heading head1 " onclick="changeContent('heading1')">Masala </h1><span style="font-size:35px;padding:0px 2px">&</span>
+  <h1 class="heading head2" onclick="changeContent('heading2')">Spices</h1>   --> 
+</div> 
+
+
+  <div class=" container shop ">
+   
+    <div class="shop ">
+      <div class="food-box ">
+        <div class="pic">
+          <img src="WholeCloves.png" class="food-img">
+        </div>
+        <h2 class="food-title">Whole Cloves</h2>
+        <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="GroundRedPepper.png" class="food-img">
+
+        </div>
+        <h2 class="food-title">GroundRedPepper</h2>
+        <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="GroundHabanero.png" class="food-img">
+        </div>
+        <h2 class="food-title">GroundHabanero</h2>
+        <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="GroundRedJalapeno.png" class="food-img">
+        </div>
+        <h2 class="food-title">GroundRedJalapeno</h2>
+        <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic">
+          <img src="GroundStarAnise.png" class="food-img">
+        </div>
+        <h2 class="food-title">GroundStarAnise </h2>
+        <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="JuniperBerries.jpg" class="food-img">
+        </div>
+        <h2 class="food-title">Juniper Berries</h2>
+        <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="zvatar.png" class="food-img">
+        </div>
+        <h2 class="food-title">zvatar Spice</h2>
+        <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="russianblend.png" class="food-img">
+        </div>
+        <h2 class="food-title">Russian Blend</h2>
+        <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+    </div>
+
+    
+  </div>
+
+  <div class="top ">
+    <h1 style="text-align:center;font-weight:600;"class="text-danger">PICKLES & SAUCES</h1>
+      <div class="shop">
+        <div class="food-box ">
+          <div class="pic">
+            <img src="NYE-Byeck-Chilli-Lilli.png" class="food-img"style="height:200px;">
+          </div>
+          <h2 class="food-title"style="text-align:center;">Chilli-Lilli Pickle</h2>
+          <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box ">
+          <div class="pic">
+            <img src="NYE-Byeck-Cor-limey-Mango.png" class="food-img"style="height:200px;">
+          </div>
+          <h2 class="food-title"style="text-align:center;">Mango pickle</h2>
+          <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box ">
+          <div class="pic">
+            <img src="NYE-Piccalill.png" class="food-img"style="height:200px;">
+          </div>
+          <h2 class="food-title"style="text-align:center;">Piccalill Pickle</h2>
+          <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box ">
+          <div class="pic">
+            <img src="chilli-jam-gt.png" class="food-img"style="height:200px;">
+          </div>
+          <h2 class="food-title"style="text-align:center;">chilli Pickle</h2>
+          <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box ">
+          <div class="pic">
+            <img src="Jammy-Byeck-Bottle.png" class="food-img"style="height:200px;">
+          </div>
+          <h2 class="food-title"style="text-align:center;">Jammy sauce</h2>
+          <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box ">
+          <div class="pic">
+            <img src="IMG_4814.png" class="food-img"style="height:200px;">
+          </div>
+          <h2 class="food-title"style="text-align:center;">Chilli sauce</h2>
+          <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box ">
+          <div class="pic">
+            <img src="Byeck-Hot-Sauce.png" class="food-img"style="height:200px;">
+          </div>
+          <h2 class="food-title"style="text-align:center;">Byeck Hot Sauce</h2>
+          <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box ">
+          <div class="pic">
+            <img src="By_eck__BBQ_Sauce.png" class="food-img"style="height:200px;">
+          </div>
+          <h2 class="food-title"style="text-align:center;">BBQ Sauce</h2>
+          <span class="food-price"style="font-family:sans-serif;font-weight:100;">Rs.40</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+
+      </div>
+  </div>
+
+  <div class="category">
+    <h1 style="text-align:center;font-weight:600;"class="text-danger mt-2">TOP CATEGORIES</h1>
+    <div class="shop">
+
+      <div class="food-box "id="caat">
+        <div class="pic">
+          <img src="GroundRedPepper.png" class="food-img"style="padding-left:40px;">
+        </div>
+        
+        <h2 class="food-title "style="text-align:center;">Blended Masala</h2>
+        <h5 style="text-align:center;font-weight:600;color:red;">GroundRedPepper</h5>
+        <p style="text-align:center;font-weight:600;color:gray;">Natural Goodness & aroma<br> Retained our Masala.<br>Try it Fast</p>
+
+          <span class="food-price"id="rs"style="font-size:15px;font-family:sans-serif;">Rs.40 Ordernow-></span>
+          <ion-icon name="cart" class="add-cart"id="cat"></ion-icon>
+
+      </div>
+
+      <div class="food-box "id="caat">
+        <div class="pic">
+          <img src="WholeCloves.png" class="food-img"style="padding-left:40px;">
+        </div>
+        
+        <h2 class="food-title"style="text-align:center;">Powdered Spices</h2>
+        <h5 style="text-align:center;font-weight:600;color:red;">WholeCloves</h5>
+        <p style="text-align:center;font-weight:600;color:gray;">Pure Spices direct from<br> Farmers & Powdered <br>to perfection</p>
+
+          <span class="food-price"id="rs"style="font-size:15px;font-family:sans-serif;">Rs.40 Ordernow-></span>
+          <ion-icon name="cart" class="add-cart"id="cat"></ion-icon>
+
+      </div>
+
+      <div class="food-box "id="caat">
+        <div class="pic">
+          <img src="By_eck__BBQ_Sauce.png" class="food-img"style="height:200px;">
+        </div>
+        
+        <h2 class="food-title"style="text-align:center;">SAUCE</h2>
+        <h5 style="text-align:center;font-weight:600;color:red;">BBQ Sauce</h5>
+        <p style="text-align:center;font-weight:600;color:gray;">Buy the Best Sauce <br>Varieties in India <br>Just like Wow</p>
+
+          <span class="food-price"id="rs"style="font-size:15px;font-family:sans-serif;">Rs.40 Ordernow-></span>
+          <ion-icon name="cart" class="add-cart"id="cat"></ion-icon>
+
+      </div>
+
+      <div class="food-box "id="caat">
+        <div class="pic">
+          <img src="NYE-Piccalill.png" class="food-img"style="height:200px;">
+        </div>
+        
+        <h2 class="food-title"style="text-align:center;">Pickle</h2>
+        <h5 style="text-align:center;font-weight:600;color:red;">Piccalilli</h5>
+        <p style="text-align:center;font-weight:600;color:gray;">Buy the Best Pickles <br>Varieties in India <br>Just like Homemade</p>
+
+          <span class="food-price"id="rs"style="font-size:15px;font-family:sans-serif;">Rs.40 Ordernow-></span>
+          <ion-icon name="cart" class="add-cart"id="cat"></ion-icon>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="video">
+    <h2 class="text-danger" style="text-align:center;font-weight:600;">RECIPIES WITH EMPORIUM STYLE</h2>
+    <div class="container con">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-12" >
+          <div class="card">
+            <div class="video-container card-video-top" id="video-container-1"style="height:200px;">
+              <div class="play-button"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Soya Fish Recipe</h5>
+              <p class="card-text scroll"style="color:gray;height:100px;"><span style="color:gray;font-weight:800;">Ingredients:</span><br>
+                1.Firm tofu<br>
+                2.Soy sauce<br>
+                3.Nori sheets (seaweed)<br>
+                4.Lemon juice<br>
+                5.Olive oil or vegetable oil<br>
+                6.Garlic powder (optional)<br>
+                7.Salt and pepper to taste<br>
+                8.All-purpose flour (for coating, optional)<br>
+              
+              </p>
+              <a href="https://www.youtube.com/watch?v=EQtnCjeZc3w" class="btn btn-danger"target="_blank">Visit</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-4 col-12">
+  
+          <div class="card">
+            <div class="video-container card-video-top" id="video-container-2"style="height:200px;">
+              <div class="play-button"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Soya Ghosh Curry Recipe</h5>
+              <p class="card-text scroll"style="color:gray;height:100px;"><span style="color:gray;font-weight:800;">Ingredients:<br></span>
+
+                1. 1 cup soy chunks (soya nuggets)<br>
+                2. 2 onions, finely chopped<br>
+                3. 2 tomatoes, pureed<br>
+                4. 1/2 cup yogurt<br>
+                5. 2 tbsp vegetable oil<br>
+                6. 1 tsp ginger-garlic paste<br>
+                7. 1 tsp cumin seeds<br>
+                8. 1 tsp coriander powder<br>
+                9. 1/2 tsp turmeric powder<br>
+                10. 1 tsp red chili powder (adjust according to your spice preference)<br>
+                11. 1 tsp garam masala<br>
+                12. Salt to taste<br>
+                13. Fresh coriander leaves for garnish<br>
+                14Water for boiling soy chunks<br></p>
+              <a href="https://www.youtube.com/watch?v=1NbBBGISfuI" class="btn btn-danger"target="_blank">Visit</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-4 col-12">
+  
+          <div class="card">
+            <div class="video-container card-video-top" id="video-container-3"style="height:200px;">
+              <div class="play-button"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-danger">Banana Bliss Recipes</h5>
+              <p class="card-text scroll"style="color:gray;height:100px;"><span style="color:gray;font-weight:800;">
+                Ingredients:</span><br>
+                1. 2 ripe bananas, peeled and sliced<br>
+                2. 1 cup Greek yogurt (or a dairy-free alternative for a vegan version)<br>
+                3. 1/2 cup almond milk (or any milk of your choice)<br>
+                4. 1 tablespoon honey or maple syrup (adjust to taste)<br>
+                5. 1/2 teaspoon vanilla extract<br>
+                6. 1 cup ice cubes<br>
+                7. A pinch of ground cinnamon (optional)<br>
+                8. A handful of berries (blueberries, strawberries) for garnish<br></p>
+              <a href="https://www.youtube.com/watch?v=kHyqVYQv_E0" class="btn btn-danger"target="_blank">Visit</a>
+            </div>
+          </div>
+  
+        </div>
+    
+        </div> 
+
+    </div>
+
+  </div><br>
+
+  <footer class="footer full-bleed" style="background-color:#f7f3f3;">
+    <div class="con "><br>
+        <div class="row r1">
+            <div class="col-md-3 col-lg-3 col-12">
+                <h5 class="text-danger">Spice Emporium (p) Ltd,</h5>
+                <p>
+                    123 Spice Street,<br> 
+                    Cityville, SP 12345.<br>
+                    Email: info@spiceemporium.com<br>
+                    Phone: (123) 456-7890
+                </p>
+            </div>
+            <div class="col-md-3 col-lg-3 col-12 list">
+              <h5>Our Company</h5>
+              <ul>
+                  <li><a href="#Home"class="disabled" >Home</a></li>
+                  <li><a href="#Product"class="disabled">Product</a></li>
+                  <li><a href="#About">About Us</a></li>
+                  <li><a href="#Contact"class="disabled">Contact Us</a></li>
+              </ul>
+          </div>
+  
+          <div class="col-md-3 col-lg-3 col-12 list">
+            <h5>Your Accounts</h5>
+            <ul>
+                <li><a href="#" >My account</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Wishlist</a></li>
+            </ul>
+        </div>
+  
+  
+  
+  
+            <div class="col-md-3 col-lg-3 col-12">
+                <h5>Follow Us</h5>
+                <ul class="social-icons">
+                  <li><a href="https://www.facebook.com/SpiceEmporium/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/spiceemp/status/1403639973958635525" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/spiceemporium/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UC5EkN__c_4JilMlcXv4ttVA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+  
+              </ul>
+            </div>
+        </div>
+    </div><hr>
+  
+    
+    <div class="bottom-bar">
+      <div class="container-fluid">
+        <h5 style="font-size:15x;margin:0px;"><span style="font-weight:600;">Foods:</span>  Spices & Masalas | Spices | Masalas | Pickles </h5><br>
+        
+                  <p> Copyright &copy; 2023 Spice Emporium. All rights reserved. | Designed by our Company</p>
+      </div>
+  </div>
+  
+  
+  </footer>
+
+  <!--video-->
+  
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+
+<script src="pr script.js"></script>
+
+
+</body>
+</html>
